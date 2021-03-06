@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/model
+END
+Book.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/model/Book.java
+END
+DispatchReceipt.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/model/DispatchReceipt.java
+END
+Order.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/model/Order.java
+END
+Customer.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/model/Customer.java
+END

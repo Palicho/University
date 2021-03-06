@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/87/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/model/exceptions
+END
+CouldNotSendCommandException.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/87/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/model/exceptions/CouldNotSendCommandException.java
+END

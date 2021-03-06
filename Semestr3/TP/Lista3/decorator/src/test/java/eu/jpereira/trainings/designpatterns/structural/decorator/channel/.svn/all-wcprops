@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/70/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel
+END
+DefaultSocialChannelBuilderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/!svn/ver/62/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/DefaultSocialChannelBuilderTest.java
+END
+ChannelPropertiesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/ChannelPropertiesTest.java
+END
+SocialChannelBuilderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/SocialChannelBuilderTest.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/xml
+END
+XMLReportBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/xml/XMLReportBody.java
+END
+XMLReportFooter.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/xml/XMLReportFooter.java
+END
+XMLReportHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/xml/XMLReportHeader.java
+END

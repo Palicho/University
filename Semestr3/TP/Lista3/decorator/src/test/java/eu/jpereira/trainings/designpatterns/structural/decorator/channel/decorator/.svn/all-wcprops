@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/70/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator
+END
+SocialChannelDecortatorIntegrationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/!svn/ver/70/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/SocialChannelDecortatorIntegrationTest.java
+END
+AbstractSocialChanneldDecoratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/!svn/ver/67/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/AbstractSocialChanneldDecoratorTest.java
+END
+URLAppenderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/69/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/URLAppenderTest.java
+END
+MessageTruncatorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/69/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/MessageTruncatorTest.java
+END

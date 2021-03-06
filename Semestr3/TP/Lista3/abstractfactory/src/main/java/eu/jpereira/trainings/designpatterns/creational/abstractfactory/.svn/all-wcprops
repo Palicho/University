@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory
+END
+ReportBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/ReportBody.java
+END
+ReportFooter.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/ReportFooter.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/Report.java
+END
+ReportHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/ReportHeader.java
+END
+ReportElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/19/designpatterns/trunk/abstractfactory/src/main/java/eu/jpereira/trainings/designpatterns/creational/abstractfactory/ReportElement.java
+END

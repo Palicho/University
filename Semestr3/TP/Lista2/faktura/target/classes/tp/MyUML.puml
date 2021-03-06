@@ -1,0 +1,23 @@
+@startuml
+
+
+
+class ManagerFaktur{
+   ArrayList<Faktura> faktury
+
+}
+class Faktura{
+    int id
+    ArrayList<Produkt> produkty
+
+}
+
+class Produkt{
+    String nazwa
+    int cena
+    int ilosc
+}
+
+
+
+@enduml

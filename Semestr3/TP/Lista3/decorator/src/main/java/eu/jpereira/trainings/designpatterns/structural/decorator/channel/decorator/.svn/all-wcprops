@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/69/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator
+END
+SocialChannelDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/!svn/ver/69/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/SocialChannelDecorator.java
+END
+MessageTruncator.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/69/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/MessageTruncator.java
+END
+URLAppender.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/69/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/decorator/URLAppender.java
+END

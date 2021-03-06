@@ -1,0 +1,4 @@
+SELECT name, owner
+FROM pet
+HAVING birth LIKE  SELECT MAX(birth) FROM pet;
+

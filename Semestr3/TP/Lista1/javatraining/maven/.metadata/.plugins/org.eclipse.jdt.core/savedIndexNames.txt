@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/oleksy/Documents/University/Semestr3/TP/Lista1/javatraining/maven/.metadata/.plugins/org.eclipse.jdt.core
+646308851.index
+1214065306.index

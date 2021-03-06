@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/main/java/eu/jpereira/trainings/designpatterns/structural/bridge/protocol
+END
+WIFIProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/main/java/eu/jpereira/trainings/designpatterns/structural/bridge/protocol/WIFIProtocol.java
+END
+Protocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/main/java/eu/jpereira/trainings/designpatterns/structural/bridge/protocol/Protocol.java
+END
+ProtocolSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/main/java/eu/jpereira/trainings/designpatterns/structural/bridge/protocol/ProtocolSelector.java
+END
+WIMAXProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/main/java/eu/jpereira/trainings/designpatterns/structural/bridge/protocol/WIMAXProtocol.java
+END
+GSMProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/main/java/eu/jpereira/trainings/designpatterns/structural/bridge/protocol/GSMProtocol.java
+END

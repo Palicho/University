@@ -1,0 +1,2 @@
+DELETE FROM pet 
+WHERE death IS NOT NULL;

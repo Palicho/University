@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/37/designpatterns/trunk/adapter/src/test/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty
+END
+ThirdPartyAdapterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/35/designpatterns/trunk/adapter/src/test/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/ThirdPartyAdapterTest.java
+END
+ThirdPartyDoorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/test/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/ThirdPartyDoorTest.java
+END
+ThirdPartyDoorObjectAdapterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/37/designpatterns/trunk/adapter/src/test/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/ThirdPartyDoorObjectAdapterTest.java
+END

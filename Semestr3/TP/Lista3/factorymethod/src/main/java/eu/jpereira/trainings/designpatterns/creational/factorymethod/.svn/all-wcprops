@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod
+END
+XMLReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/XMLReport.java
+END
+AbstractReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/AbstractReport.java
+END
+HTMLReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/HTMLReport.java
+END
+ReportGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/ReportGenerator.java
+END
+PDFReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/PDFReport.java
+END
+ReportData.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/ReportData.java
+END
+JSONReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/JSONReport.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/16/designpatterns/trunk/factorymethod/src/main/java/eu/jpereira/trainings/designpatterns/creational/factorymethod/Report.java
+END

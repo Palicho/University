@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge
+END
+BasicConnectionManagerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/BasicConnectionManagerTest.java
+END
+WIFIProtocolTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/WIFIProtocolTest.java
+END
+ProtocolTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/ProtocolTest.java
+END
+ProtocolSelectorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/ProtocolSelectorTest.java
+END
+InternetManagerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/InternetManagerTest.java
+END
+WIMAXProtocolTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/WIMAXProtocolTest.java
+END
+GSMProtocolTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/GSMProtocolTest.java
+END
+ConnectionManagerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/59/designpatterns/trunk/bridge/src/test/java/eu/jpereira/trainings/designpatterns/structural/bridge/ConnectionManagerTest.java
+END
