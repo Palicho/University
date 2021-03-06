@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command
+END
+StartApplianceCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/StartApplianceCommand.java
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/Command.java
+END
+CouldNotRollbackCommandException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/CouldNotRollbackCommandException.java
+END
+TurnOffAppliance.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/TurnOffAppliance.java
+END
+StopApplianceCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/StopApplianceCommand.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/Event.java
+END
+TurnOnApplianceCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/TurnOnApplianceCommand.java
+END
+AbstractCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/AbstractCommand.java
+END
+UndoableCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/UndoableCommand.java
+END
+CouldNotExecuteCommandException.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/157/designpatterns/trunk/state/src/main/java/eu/jpereira/trainings/designpatterns/behavioral/state/command/CouldNotExecuteCommandException.java
+END

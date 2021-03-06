@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/70/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel
+END
+FacebookChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/61/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/FacebookChannel.java
+END
+SocialChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/67/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/SocialChannel.java
+END
+LinkedinChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/61/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/LinkedinChannel.java
+END
+SocialChannelBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/70/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/SocialChannelBuilder.java
+END
+TwitterChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/61/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/TwitterChannel.java
+END
+DefaultSocialChannelBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/DefaultSocialChannelBuilder.java
+END
+SocialChannelProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/SocialChannelProperties.java
+END
+SocialChannelPropertyKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/main/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/SocialChannelPropertyKey.java
+END

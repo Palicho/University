@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/dummy
+END
+TestDummyChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/dummy/TestDummyChannel.java
+END
+DummySocialChannelBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/!svn/ver/65/designpatterns/trunk/decorator/src/test/java/eu/jpereira/trainings/designpatterns/structural/decorator/channel/dummy/DummySocialChannelBuilder.java
+END

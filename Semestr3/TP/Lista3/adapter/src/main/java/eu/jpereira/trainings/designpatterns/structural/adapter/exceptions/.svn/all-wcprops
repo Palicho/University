@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/34/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/exceptions
+END
+CodeMismatchException.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/exceptions/CodeMismatchException.java
+END
+IncorrectDoorCodeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/34/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/exceptions/IncorrectDoorCodeException.java
+END

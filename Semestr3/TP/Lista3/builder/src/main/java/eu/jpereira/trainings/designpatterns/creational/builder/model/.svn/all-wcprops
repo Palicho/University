@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/22/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/model
+END
+ReportBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/22/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/model/ReportBody.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/22/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/model/Report.java
+END
+SoldItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/22/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/model/SoldItem.java
+END
+Customer.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/22/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/model/Customer.java
+END
+SaleEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/22/designpatterns/trunk/builder/src/main/java/eu/jpereira/trainings/designpatterns/creational/builder/model/SaleEntry.java
+END

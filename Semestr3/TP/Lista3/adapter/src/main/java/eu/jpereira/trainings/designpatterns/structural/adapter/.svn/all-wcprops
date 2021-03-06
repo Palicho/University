@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/34/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter
+END
+DoorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/DoorController.java
+END
+DoorNotManagedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/DoorNotManagedException.java
+END
+SimpleDoorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/33/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/SimpleDoorController.java
+END

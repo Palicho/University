@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/service
+END
+CustomerDBService.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/service/CustomerDBService.java
+END
+CustomerNotificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/service/CustomerNotificationService.java
+END
+OrderingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/service/OrderingService.java
+END
+WharehouseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/service/WharehouseService.java
+END
+BookDBService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/72/designpatterns/trunk/facade/src/main/java/eu/jpereira/trainings/designpatterns/structural/facade/service/BookDBService.java
+END

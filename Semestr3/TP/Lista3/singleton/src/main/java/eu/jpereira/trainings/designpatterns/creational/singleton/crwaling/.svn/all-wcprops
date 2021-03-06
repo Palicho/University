@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/29/designpatterns/trunk/singleton/src/main/java/eu/jpereira/trainings/designpatterns/creational/singleton/crwaling
+END
+CannotCrawlException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/29/designpatterns/trunk/singleton/src/main/java/eu/jpereira/trainings/designpatterns/creational/singleton/crwaling/CannotCrawlException.java
+END
+DummySiteCrawler.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/29/designpatterns/trunk/singleton/src/main/java/eu/jpereira/trainings/designpatterns/creational/singleton/crwaling/DummySiteCrawler.java
+END
+SiteCrawler.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/29/designpatterns/trunk/singleton/src/main/java/eu/jpereira/trainings/designpatterns/creational/singleton/crwaling/SiteCrawler.java
+END

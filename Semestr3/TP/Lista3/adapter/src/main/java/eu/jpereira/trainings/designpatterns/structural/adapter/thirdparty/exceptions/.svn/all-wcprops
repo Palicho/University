@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/exceptions
+END
+CannotUnlockDoorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/exceptions/CannotUnlockDoorException.java
+END
+CannotChangeCodeForUnlockedDoor.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/exceptions/CannotChangeCodeForUnlockedDoor.java
+END
+CannotChangeStateOfLockedDoor.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/!svn/ver/31/designpatterns/trunk/adapter/src/main/java/eu/jpereira/trainings/designpatterns/structural/adapter/thirdparty/exceptions/CannotChangeStateOfLockedDoor.java
+END

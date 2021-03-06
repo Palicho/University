@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/99/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller
+END
+TrafficLightController.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/93/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/TrafficLightController.java
+END
+PowerCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/87/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/PowerCommand.java
+END
+ProxyTrafficLightController.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/!svn/ver/99/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/ProxyTrafficLightController.java
+END
+ControllerCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/87/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/ControllerCommand.java
+END
+ITrafficLightController.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/!svn/ver/93/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/ITrafficLightController.java
+END
+GenericTrafficLightController.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/87/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/GenericTrafficLightController.java
+END
+LightsCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/87/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/LightsCommand.java
+END
+ResilientTrafficLightController.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/!svn/ver/95/designpatterns/trunk/proxy/src/main/java/eu/jpereira/trainings/designpatterns/structural/proxy/controller/ResilientTrafficLightController.java
+END

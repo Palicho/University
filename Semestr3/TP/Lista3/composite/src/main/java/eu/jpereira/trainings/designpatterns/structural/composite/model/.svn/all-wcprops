@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model
+END
+Shape.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/Shape.java
+END
+Circle.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/Circle.java
+END
+ShapeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/ShapeType.java
+END
+ShapeDoesNotSupportChildren.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/!svn/ver/39/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/ShapeDoesNotSupportChildren.java
+END
+CompositeShape.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/CompositeShape.java
+END
+Rectangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/Rectangle.java
+END
+Triangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/Triangle.java
+END
+Line.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/40/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/Line.java
+END
+LeafShape.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/39/designpatterns/trunk/composite/src/main/java/eu/jpereira/trainings/designpatterns/structural/composite/model/LeafShape.java
+END
