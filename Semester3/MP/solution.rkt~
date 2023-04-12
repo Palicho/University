@@ -1,0 +1,260 @@
+#lang racket
+
+
+(provide (struct-out column-info)
+         (struct-out table)
+         (struct-out and-f)
+         (struct-out or-f)
+         (struct-out not-f)
+         (struct-out eq-f)
+         (struct-out eq2-f)
+         (struct-out lt-f)
+         table-insert
+         table-project
+         table-sort
+         table-select
+         table-rename
+         table-cross-join
+         table-natural-join)
+
+(define-struct column-info (name type) #:transparent)
+
+(define-struct table (schema rows) #:transparent)
+
+(define cities
+  (table
+   (list (column-info 'city    'string)
+         (column-info 'country 'string)
+         (column-info 'area    'number)
+         (column-info 'capital 'boolean))
+   (list (list "Wrocław" "Poland"  293 #f)
+         (list "Warsaw"  "Poland"  517 #t)
+         (list "Poznań"  "Poland"  262 #f)
+         (list "Berlin"  "Germany" 892 #t)
+         (list "Munich"  "Germany" 310 #f)
+         (list "Paris"   "France"  105 #t)
+         (list "Rennes"  "France"   50 #f))))
+
+(define countries
+  (table
+   (list (column-info 'country 'string)
+         (column-info 'population 'number))
+   (list (list "Poland" 38)
+         (list "Germany" 83)
+         (list "France" 67)
+         (list "Spain" 47))))
+
+(define (empty-table columns) (table columns '()))
+
+; Wstawianie
+
+;sprawdzanie typu
+(define (check-type val type)
+  (cond [(equal? type 'string) (string? val)]
+        [(equal? type 'number) (number? val)]
+        [(equal? type 'boolean) (boolean? val)]
+        [(equal? type 'symbol) (symbol? val)]))
+
+
+;długosc listy 
+(define (list-length xs)
+  (if (null? xs)
+      0
+      (+ (list-length (cdr xs)) 1)))
+
+;sprawdzenie czy wiersz spełnia warunki schematu
+(define (valid-row? row scheme)
+  (let ([len (list-length row )])
+    (if (= len (list-length scheme))
+        (if (= len 0)
+            #t
+            (valid-row-in-scheme? row scheme))
+        #f)))
+             
+;sprawdzenie czy wartosci wiersza maja odpowiedni typ z schematu
+(define (valid-row-in-scheme? row scheme)
+  (if (check-type (car row) (column-info-type (car scheme)))
+      (valid-row? (cdr row) (cdr scheme))
+      #f))
+
+;wstawienie wiersza do listy wierszy tablicy      
+(define (insert-row row tab)
+  (if (valid-row? row (table-schema tab) )
+      (append (list row) (table-rows tab))
+      (raise(error "wiersz nie spełnia schematu"))))
+
+;utworzenie nowej tablicy po dadaniu weirsza
+(define (table-insert row tab)
+  (table (table-schema tab) (insert-row row tab)))
+
+;Projekcja
+
+;funkcja zwracajaca pozyje kolumny w schemacie
+(define (column-id col schema)
+  (define (out col schema it)
+    (if (null? schema)
+        (raise (error "brak kolumny o takiej nazwie"))
+        (if (equal? col (column-info-name (car schema)))
+            it
+            (out col (cdr schema) (+ it 1)))))
+  (out col schema 0))
+
+
+;
+;(define (id-list cols tab)
+;  (if (null? cols)
+;      null
+;      (cons (column-id (car cols) (table-schema tab) 0) (id-list (cdr cols) tab))))
+;
+
+;funkcja zwracjaca liste pozycji odpowiednich kolumn w schemacie
+(define (list-id cols schema)
+  (map  (lambda (x) (column-id x schema)) cols))
+
+;funkcja zwraca element na i-tej pozycji w liscie 
+(define (get-element i xs )
+  (define (out ys it)
+    (if (equal? it i)
+        (car ys)
+        (out (cdr ys) (+ it 1))))
+  (out xs 0))
+
+;funkcja zwaraca liste elementów dla listy pozycji
+(define (get-all-elements is xs)
+  (map (lambda (x) (get-element x xs)) is))
+
+;funkcja projekcji
+(define (table-project cols tab)
+  (let ([is (list-id cols (table-schema tab))])
+    (table (get-all-elements is (table-schema tab)) (map (lambda (x) (get-all-elements is x)) (table-rows tab)))))
+
+; Zmiana nazwy
+
+
+(define (change-schema name nname schema)
+  (if (null? schema)
+      null
+      (if (equal? (column-info-name (car schema)) name )
+          (cons (column-info nname (column-info-type (car schema))) (cdr schema))
+          (cons (car schema) (change-schema name nname  (cdr schema))))))
+
+(define (table-rename col ncol tab)
+  (table (change-schema col ncol (table-schema tab)) (table-rows tab)))
+
+; Sortowanie
+
+;porównanie typu boolean 
+(define (boolean<? a b)
+  (if (and (equal? a #t) (equal? b #f))
+      #f
+      #t))
+
+;wybranie odpowiedzniego prównania dla typu
+(define (get-comp<? x)
+  (cond[(string? x) (lambda (x y) (string<? x y))]
+        [(number? x) (lambda (x y) (< x y))]
+        [(boolean? x) (lambda (x y) (boolean<? x y))]
+        [(symbol?'x) (lambda (x y ) (symbol<? x y))]))
+
+
+
+;porownianie row
+(define (row<? a b)
+  (if (and (null? a) (null? b))
+           #t
+           (let ([a-val (car a)]
+                 [b-val (car b)])
+           (if (not (equal? a-val b-val))    
+               ((get-comp<? a-val) a-val b-val)
+               (row<? (cdr a) (cdr b))))))             
+         
+
+;posortowanie rows tabilcy
+(define (sort-rows cols tab)
+  (let ([ids (list-id cols (table-schema tab))])
+    (sort (table-rows tab) row<? #:key (lambda (x) (get-all-elements ids x))))) 
+
+
+; towrzenie posortowaniej leksykograficzne tablic po wartosciach kolumn
+(define (table-sort cols tab)
+   (table (table-schema tab) (sort-rows cols tab)))
+
+
+; Selekcja
+
+(define-struct and-f (l r))
+(define-struct or-f (l r))
+(define-struct not-f (e))
+(define-struct eq-f (name val))
+(define-struct eq2-f (name name2))
+(define-struct lt-f (name val))
+
+(define (less-than x y)
+  (let ([comp< (get-comp<? x) ])
+    (if (equal? comp< (get-comp<? y))
+        (comp< x y)
+        (raise (error " typów nie można prównać")))))
+      
+         
+(define (check-form-row? row schema form )
+    (cond [(and-f? form ) (and (check-form-row? row schema (and-f-l form)) (check-form-row? row schema (and-f-r form) ))]
+          [(or-f? form ) (or (check-form-row? row schema (or-f-l form)) (check-form-row? row schema (or-f-r form)) )]
+          [(not-f? form ) (not (check-form-row? row schema (not-f-e form)))]
+          [(eq-f? form ) (equal? (get-element (column-id (eq-f-name form) schema ) row) (eq-f-val form))]
+          [(eq2-f? form) (equal? (get-element (column-id (eq2-f-name form) schema ) row) (get-element (column-id (eq2-f-name2 form) schema) row ))]
+          [(lt-f? form ) (less-than (get-element (column-id (lt-f-name form) schema ) row) (lt-f-val form))]
+          [else #f]))
+
+
+        
+
+(define (rows-select rows schema form )
+  (if (null? rows)
+      null
+      (if (check-form-row? (car rows) schema form)
+          (cons (car rows) (rows-select (cdr rows) schema form))
+          (rows-select (cdr rows) schema form))))
+
+(define (table-select form tab)
+  (table (table-schema tab) (rows-select (table-rows tab) (table-schema tab) form))) 
+  
+
+; Złączenie kartezjańskie
+
+(define (join row ys)
+  (map (lambda (x) (append row x)) ys) )
+
+(define (rows-cross-join rows1 rows2)
+  (if (null? rows1)
+      '()
+      (append (join  (car rows1) rows2) (rows-cross-join (cdr rows1) rows2))))
+       
+(define (table-cross-join tab1 tab2)
+  (table (append (table-schema tab1) (table-schema tab2)) (rows-cross-join (table-rows tab1) (table-rows tab2))))
+  
+;Złączenie
+
+(define (elem-in-list a xs)
+  (if (null? xs)
+      #f
+      (if (equal? a (car xs))
+          #t
+          (elem-in-list a (cdr xs)))))
+
+(define (get-pairs xschema yschema)
+  (define (out xs ys it)
+    (if (null? xs)
+        null
+        (if (elem-in-list (car xs) ys)
+            (cons (cons it (column-id (column-info-name (car xs)) ys)) (out (cdr xs) ys (+ it 1)))
+            (out (cdr xs) ys (+ it 1) ))))
+  (out xschema yschema 0 ))
+
+(define (table-natural-join xs ys)
+  (table (table-schema xs) (table-rows ys)))
+      
+
+
+; (list(column-info 'a'string) (column-info 'b 'string) (column-info 'c 'string))
+
+   

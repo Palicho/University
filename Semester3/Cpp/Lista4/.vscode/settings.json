@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "initializer_list": "cpp",
+        "atomic": "cpp",
+        "string": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

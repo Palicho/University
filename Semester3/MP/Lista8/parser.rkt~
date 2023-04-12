@@ -1,0 +1,57 @@
+#lang racket
+
+(require "syntax.rkt")
+(require (only-in plait s-exp-content))
+(provide parse-exp)
+
+(define (match-pattern grammar pat se)
+  (match pat
+    ['ANY    (list se)]
+    ['NUMBER (and (number? se) (list se))]
+    ['SYMBOL (and (symbol? se) (list se))]
+    ['()     (and (null? se) '())]
+    [(cons pat1 pat2)
+     (and (cons? se)
+          (let ([r1 (match-pattern grammar pat1 (car se))])
+            (and r1
+                 (let ([r2 (match-pattern grammar pat2 (cdr se))])
+                   (and r2 (append r1 r2))))))]
+    [else
+     (cond
+       [(symbol? pat) (and (eq? pat se) '())]
+       [(string? pat)
+        (list (run-named-parser grammar pat se))])]))
+
+(define (run-parser grammar name p se)
+  (match p
+    ['() (error "Syntax error: expected" name)]
+    [(cons (list pat action) p)
+     (let ([r (match-pattern grammar pat se)])
+       (if r
+           (apply action r)
+           (run-parser grammar name p se)))]))
+
+(define (run-named-parser grammar name se)
+  (run-parser grammar name (cdr (assoc name grammar)) se))
+
+; ====================================================
+
+(define op-parser
+  `((+ ,op-add)
+    (- ,op-sub)
+    (* ,op-mul)
+    (/ ,op-div)))
+
+(define exp-parser
+  `((NUMBER                                 ,exp-number)
+    (("operator" "expression" "expression") ,exp-op)))
+
+(define grammar
+  `(("operator"   . ,op-parser)
+    ("expression" . ,exp-parser)))
+
+(define (run-exp-parser se)
+  (run-named-parser grammar "expression" se))
+
+(define (parse-exp se)
+  (run-exp-parser (s-exp-content se)))

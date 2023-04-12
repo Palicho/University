@@ -1,0 +1,136 @@
+#lang racket
+
+(define (my-foldr f x xs)
+  (if (null? xs)
+      x
+      (f (car xs) (my-foldr f x (cdr xs)))))
+
+
+(define-struct leaf () #:transparent)
+(define-struct node (l elem r) #:transparent)
+
+(define (tree? x)
+  (cond [(leaf? x) #t]
+        [(node? x) (and (tree? (node-l x)) (tree? (node-r x)))]
+        [else #f]))
+
+(define example-tree (node (node (leaf) 2 (leaf))
+                           5
+                           (node (node (leaf) 6 (leaf))
+                                 8
+                                 (node (leaf) 9 (leaf)))))
+
+; [ zad 2 ]
+       
+(define (fold-tree f x t)
+  (if (leaf? t)
+      x
+      (f   (fold-tree f x (node-r t)) (node-elem t) (fold-tree f x (node-l t) ))))
+
+(define (tree-sum t)
+  (fold-tree + 0 t))
+
+
+(define (tree-flip t)
+  (fold-tree (lambda (l e r) (node r e l) ) (leaf) t))
+
+(define (tree-height t)
+  (fold-tree (lambda (accr x accl) (+ 1 (if ( > accr accl  ) accr accl))) 0 t)))
+
+(define (tree-span t)
+  (let ([f (lambda (a b c) (if (leaf? c ) b c))])
+    (cons (fold-tree ( f (leaf) (node-l t)))
+          (fold-tree ( f (leaf) (tree-flip (node-r t)))))))
+
+(define (flatten t)
+  (fold-tree (lambda ( x y z) (append z (listy y) x)) `() t))
+
+
+(define (fold-T f x d)
+  (if (leaf? d)
+      x
+      (let* ([acc (fold-T f x (node-l t))]
+             [acc2 (fold-t f acc (node-r t))])
+        f acc2 (node-elem d))))
+
+(define (tree-flip2 )
+  (fold-tree 
+       
+        
+ 
+; [ zad 3]
+(define (bst? t)
+      (if (node? t)
+          (and (or (leaf? (node-l t)) (and (node? (node-l t)) (<= (node-elem (node-l t)) (node-elem t))))
+               (or (leaf? (node-r t)) (and (node? (node-r t)) (>= (node-elem (node-r t)) (node-elem t))))
+               (bst? (node-l t))
+               (bst? (node-r t))
+               )
+                          
+          (if (leaf? t)
+              #t
+              #f)))
+
+; [zad 4]
+
+(define (flatten-improved t)
+  (define ( out i tail )
+    (cond
+      [ ( and (leaf? (node-l i)) (left? (node-r i))) (cons (node-elem i ) tail)]
+      [ (leaf? (node-l i)) (cons (node-elem i ) (out (node-r i) tail))]
+      [ (leaf? (node-r i)) (out (node-l i) (cons ( node-elem i) tail))]
+      [ else (out (node-l i) (cons (node-elem i) (out (node-r i) tail)))])))
+      
+     
+(define (sum-paths t)
+  (define  (foo t acc)
+    (if (leaf? t)
+        t
+        (let ([new_elem (+ (node-elem t) acc)])
+        (node (foo (node-l t) new_elem) new_elem (foo (node-r t) new_elem)))))
+  ( foo t 0))
+
+; [ zad 6 ]
+
+;(define (delete e t)
+;  (if (leaf? t)
+;      #f
+;      (cond ([< e (node-elem t)] (delete e (node-l t)))
+;            ([> e (node-elem t)] (delete e (node-r t)))
+;            (else > (tree-height example-tree)
+;(if (and (leaf? (node-l t)) (leaf? (node-r t))) 
+
+; [ zad 7 ]
+
+(define example-queue (cons (list 1 ) (list 5 )))
+
+(define empty-queue (cons null null))
+
+(define (empty? q)
+  (null? (car q)))
+
+(define (push-back x q)
+  (cons (car q) (append (list x) (cdr q) )))
+
+(define (front q)
+  (car (car q)))
+
+(define (pop q)
+  (if (null? (cdr (car q)))
+      (cons (reverse (cdr q)) `())
+      (cons (cdr (car q)) (cdr q))))
+
+(define q2 (pop example-queue))
+(define q3 (push-back 2 q2))
+(define q4 (push-back 3 q3))
+(define q5 (pop q4))
+
+  
+  
+                      
+          
+            
+
+
+
+       

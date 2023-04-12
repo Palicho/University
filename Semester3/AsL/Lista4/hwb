@@ -1,0 +1,66 @@
+#!/bin/bash
+#Konrad Oleksy, lista 4
+PROGNAME="hwb"
+VERSION_NUM="1.0.0"
+VERSION_MSG="$PROGNAME $VERSION_NUM"
+
+USAGE="usage: hwb [OPTION]... [NAME]...
+-c, --capitalize                    capitalize greeting target
+--color=[WHEN]                      colorize targets; WHEN can be 'always',
+                                      'auto' (default if omitted), or 'never'
+-g TEXT, --greeting=TEXT            replace Hello with TEXT
+-h, --help                          print this help message
+-v, --version                       print version
+-w, --world                         print greeting for the world"
+
+RED='\033[0;31m'
+NC='\033[0m'
+
+function usage () {
+    echo "$USAGE"
+}
+
+function greet () {
+    greeting=$1
+    name=$2
+    color=$3
+    capitalize=$4
+    [[ $capitalize ]] && name=$(sed -e 's/b./\u\o/' <<< $name)
+    [[ $color == "always" ]] && name="$RED$name$NC"
+    [[ $color == "auto" ]] && [[ -t 1 ]] && name="$RED$name$NC"
+    printf "$greeting, $name!\n"
+}
+
+optres=$(getopt -n hwb -o cg:hvw -l capitalize,color:,greeting:,help,version,world -- "$@")
+eval set -- "$optres"
+
+CAPITALIZE=
+VERSION=
+COLOR=auto
+GREETING=Hello
+HELP=
+WORLD=
+while true
+do
+    case "$1" in
+        -v | --version ) VERSION=true; shift ;;
+        -c | --capitalize ) CAPITALIZE=true; shift ;;
+        -h | --help ) HELP=true; shift ;;
+        -g | --greeting ) GREETING="$2"; shift 2 ;;
+        -w ) WORLD=true; shift 1 ;;
+        --color ) COLOR="$2"; shift 2 ;;
+        -- ) shift; break ;;
+        * ) shift ;;
+    esac
+done
+
+[[ $VERSION ]] && echo "$VERSION_MSG" && exit
+[[ $HELP ]] && usage && exit
+
+[[ $1 ]] || WORLD=true
+while [[ $1 ]]
+do
+    greet $GREETING $1 $COLOR $CAPITALIZE
+    shift
+done
+[[ $WORLD == true ]] && greet $GREETING world $COLOR $CAPITALIZE

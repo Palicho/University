@@ -1,0 +1,6 @@
+#lang racket
+
+(define (my-foldr f x xs)
+  (if (null? xs)
+      x
+      (f (car xs) (my-foldr f x (cdr xs)))))

@@ -1,0 +1,57 @@
+#lang plait
+
+; [ Zad 7 ]
+
+( define-type Prop
+( var [ v : String ])
+( conj [ l : Prop ] [ r : Prop ])
+( disj [ l : Prop ] [ r : Prop ])
+( neg [ f : Prop ]) )
+
+(define (get-vars prop)
+  (local [(define (out p xs)
+            (cond [(var? p) (cons (var-v p) xs)]
+                  [(conj? p) (append (out  (conj-r p ) xs ) (out (conj-l p) xs) )]
+                  [(disj? p) (append (out (disj-l p)  xs) (out  (disj-r p) xs))]
+                  [(neg? p) (out (neg-f p) xs) ]))]
+    (out prop '())))
+
+(define (remove-duplicates lon)
+  (foldr (lambda (x y) (cons x (filter (lambda (z) (not (equal? x z))) y))) empty lon))
+
+(define (get-in-vars prop)
+  (remove-duplicates (get-vars prop)))
+        
+; [ Zad 8 ]
+
+;(eval :  ((Hashof String Boolean) Prop -> Boolean))
+
+(define (eval h p)
+  (cond [(var? p)  (some-v (hash-ref h (var-v p)))]
+        [(conj? p) (and (eval h (conj-l p)) (eval h (conj-r p)))]
+        [(disj? p) (or (eval h (disj-l p)) (eval h (conj-r p)))]
+        [(neg? p) (not (eval h (neg-f p)))]))
+
+; [ Zad 9 ]
+
+;(define (all-wart num xs )
+;  (local ([define (get-wart it ys)
+;            (if (= num it)
+;                (cons ys xs)
+;                ( (get-wart (+ it 1) (append #t ys)) (get-wart (+ it 1) (append #f ys))))]))
+;  (get-wart num '()))
+                
+                
+ ; ((all-wart (- num 1) (append '(#t) xs)) (all-wart (- num 1) (append '(#f) xs)))
+
+
+
+
+
+
+
+
+
+
+ ; (let ([tail (all-wart (- num 1))])
+         
