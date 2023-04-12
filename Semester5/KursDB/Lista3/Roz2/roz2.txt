@@ -1,0 +1,15 @@
+Rodzaje kursorów:
+
+statyczne(STATIC)
+- read-only
+- rezultat przetrzymywany w tempdb
+- kursor działa na niezmienionych danych
+- niewrażlwy na (ISU) 
+
+dynamiczne(DYNAMIC)
+
+działają w spósób przeciwny do static
+
+
+kluczowe(KEYSET)
+- 
